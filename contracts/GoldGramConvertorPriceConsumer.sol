@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.2;
+pragma solidity >=0.7.0;
 
-import "https://github.com/smartcontractkit/chainlink/blob/master/evm-contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SignedSafeMath.sol";
+import "@chainlink/contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
+import "@openzeppelin/contracts/math/SignedSafeMath.sol";
 
 contract GoldGramConvertorPriceConsumer {
     using SignedSafeMath for int;
