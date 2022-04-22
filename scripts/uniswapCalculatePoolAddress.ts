@@ -3,9 +3,9 @@ import * as ethers from 'ethers';
 const cc = require('eth-create2-calculator');
 
 const bytecode = UniswapV3Pool.bytecode;
-const token0 = "";
-const token1 = "";
-const fees = 10000; // denominated in hundredths of a bip
+const token0 = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"; // to determine the token0 and token1, you can inspect element and use the debugger when creating the pool to see which is which.
+const token1 = "0xF5238462E7235c7B62811567E63Dd17d12C2EAA0";
+const fees = 3000; // denominated in hundredths of a bip
 
 const types = ['address', 'address', 'uint'];
 const params = [token0, token1, fees];
