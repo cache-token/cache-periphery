@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  background: #e8e8e8;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.TransactionsConfirmationContainer {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.TransactionsConfirmationHeaderContainer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.TransactionsConfirmationContentContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.TransactionsConfirmationMessage {
+  text-align: center;
+  width: 100%;
+}
+
+.TransactionsConfirmationStepper {
+  width: 100% !important;
+}
+
+.TransactionsConfirmationActionsContainer {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
