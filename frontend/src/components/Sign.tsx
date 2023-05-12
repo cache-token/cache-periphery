@@ -62,9 +62,9 @@ const Sign = () => {
       "function transferFrom(address sender, address recipient, uint256 amount) external returns (bool)"
     ]);
     const encodedFunctionData = erc20Inf.encodeFunctionData("transferFrom", [
-      config.tokenAddress,
+      config.safeAddress,
       config.recipientAddress,
-      config.safeAddress
+      tokenBalanceData.value
     ]);
 
     return ethers.utils._TypedDataEncoder.hash({ verifyingContract: config.safeAddress, chainId: 137 }, EIP712_SAFE_TX_TYPE, {
