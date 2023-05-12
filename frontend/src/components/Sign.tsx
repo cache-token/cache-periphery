@@ -64,7 +64,7 @@ const Sign = () => {
     const encodedFunctionData = erc20Inf.encodeFunctionData("transferFrom", [
       config.safeAddress,
       config.recipientAddress,
-      tokenBalanceData.value
+      tokenBalanceData?.value
     ]);
 
     return ethers.utils._TypedDataEncoder.hash({ verifyingContract: config.safeAddress, chainId: 137 }, EIP712_SAFE_TX_TYPE, {
